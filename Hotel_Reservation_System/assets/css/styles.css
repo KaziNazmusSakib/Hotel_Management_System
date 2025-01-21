@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Login & Signup Page */
+.login-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.login-signup form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-signup input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Signup Section Styles */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.signup-section form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.signup-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.signup-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+}
+
+.signup-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.signup-section button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.admin-dashboard aside {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.admin-dashboard aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-dashboard aside ul li {
+    margin: 10px 0;
+}
+
+.admin-dashboard aside ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background: #444;
+}
+
+.admin-dashboard aside ul li a:hover {
+    background: #555;
+}
+
+.admin-dashboard main {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rooms & Facilities */
+.rooms, .facilities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+/* Check-In/Check-Out Page */
+.booking {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking input, .booking select {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Contact Us */
+.contact-us {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-dashboard {
+        grid-template-columns: 1fr;
+    }
+}
